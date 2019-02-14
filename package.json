@@ -1,0 +1,24 @@
+{
+  "name": "finance-catering",
+  "version": "1.0.0",
+  "description": "add catering subitems for tito export",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSConfBp/finance-catering.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JSConfBp/finance-catering/issues"
+  },
+  "homepage": "https://github.com/JSConfBp/finance-catering#readme",
+  "dependencies": {
+    "csv": "^5.1.1",
+    "minimist": "^1.2.0"
+  }
+}
