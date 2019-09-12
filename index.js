@@ -24,23 +24,22 @@ const itemizeTickets = (item) => {
 
 const handleCombos = (tickets) => {
 	let result = tickets.slice(0)
-	//console.log('has combo');
 
-	comboPairs.forEach(pair => {
+	result.forEach((item, index) => {
+		comboPairs.forEach(pair => {
 			if (!item) return false
 
+			if (index > -1) {
+				const amount = result[index][0]
+				result = result.map((item) => {
+					if (pair[1].test(item[1].toLowerCase())) {
+						item[0] = item[0] - amount
+					}
+					return item
+				})
+			}
 			return pair[0].test(item[1].toLowerCase())
 		})
-
-		if (index > -1) {
-			const amount = result[index][0]
-			result = result.map((item) => {
-				if (pair[1].test(item[1].toLowerCase())) {
-					item[0] = item[0] - amount
-				}
-				return item
-			})
-		}
 	})
 
 	// cleanup zero amount tickets
