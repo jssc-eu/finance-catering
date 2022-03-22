@@ -19,6 +19,6 @@
   "homepage": "https://github.com/JSConfBp/finance-catering#readme",
   "dependencies": {
     "csv": "^5.1.1",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.6"
   }
 }
